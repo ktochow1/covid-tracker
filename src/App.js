@@ -1,25 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import CreatePost from './components/CreatePost'
+import React from 'react'
+import GlobalCovid from './components/GlobalCovid'
+// import CanvasJSChart from './assetsCanvas/CanvasJSChart';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import CanvasJSReact from './canvasjs.react'
+
+class App extends React.Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      covidGraph: {
+        graph: ''
+      },
+      posts: {
+        bio: '',
+        userPic: '',
+        departedPic: ''
+      },
+      form: {
+        info: ''
+      },
+      comments: {
+        content: ''
+      },
+      likes: 0
+
+    }
+  }
+  render(){
+    
+    return (
+      <div className="App">
+        <GlobalCovid />
+        <CreatePost name="Kat"/>
+      </div>
+    )
+  };
 }
 
 export default App;
