@@ -1,9 +1,8 @@
 import './App.css';
-import CreatePost from './components/CreatePost'
 import React from 'react'
-import GlobalCovid from './components/GlobalCovid'
+import CovidGraph from './containers/CovidGraph'
+import FormContainer from './containers/FormContainer'
 // import CanvasJSChart from './assetsCanvas/CanvasJSChart';
-
 // import CanvasJSReact from './canvasjs.react'
 
 class App extends React.Component {
@@ -32,8 +31,8 @@ class App extends React.Component {
     
     return (
       <div className="App">
-        <GlobalCovid />
-        <CreatePost name="Kat"/>
+        <CovidGraph />
+        <FormContainer />
       </div>
     )
   };

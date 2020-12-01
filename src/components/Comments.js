@@ -1,8 +1,6 @@
 function Comments(props){
     return(
-        <div>
-            
-        </div>
+        <div></div>
     )
 }
 

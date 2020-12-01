@@ -24,7 +24,7 @@ function GlobalCovid(props){
     return(
         <div>
             <h2>Global Covid Deaths</h2>
-            <div style={{height: '700px', width: '700px', margin: '15px'}}>
+            <div style={{height: '700px', width: '700px', margin: '15px 0px 0px 0px'}}>
                 <Line data={chartData} options={{
                     responsive: true,
                     title: {text: 'oo', display: true},
